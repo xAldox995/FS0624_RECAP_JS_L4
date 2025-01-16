@@ -124,7 +124,7 @@ const upperFirst =  function(string){
     }
     return arrayOfString.join(' ')
 }
-console.log(upperFirst('ciao a tutti'))
+console.log(upperFirst('ciao a tutti sono Aldo'))
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -132,9 +132,21 @@ console.log(upperFirst('ciao a tutti'))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const cutString = function (string) {
+return string.slice(1,  - 1);
+}
+console.log(cutString('Aldo'))
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (n) {
+    let result = [];
+    for (let i = 0; i < n; i++) {
+        result.push(Math.floor(Math.random() * 11))
+    }
+    return result
+}
+console.log(giveMeRandom(5))
