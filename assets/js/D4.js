@@ -3,6 +3,11 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const areaRettangolo = function (l1, l2) {
+    return l1 * l2
+}
+
+console.log(areaRettangolo(3, 4))
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -11,6 +16,16 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const crazySum = function (n1, n2) {
+    let result;
+    if (n1 === n2) {
+        result = (n1 + n2) * 3
+    } else {
+        result = n1 + n2
+    }
+    return result
+}
+console.log(crazySum(2, 2))
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -18,6 +33,16 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (n) {
+    let result;
+    if (n <= 19) {
+        result = Math.abs(n - 19) ;
+    } else {
+        result = Math.abs (n - 19) * 3;
+    }
+    return result
+}
+console.log(crazyDiff(18))
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
